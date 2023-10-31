@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Tavsa Dictionary (very WIP)</title>
+    <script src="https://unpkg.com/htmx.org@1.9.6"></script>
+    <script src="https://unpkg.com/htmx.org/dist/ext/json-enc.js"></script>
+</head>
+
+<body>
+    Add content to da dickshunari:
+
+    <form hx-post="/tavsa/add" hx-ext='json-enc' hx-target="#dict" hx-swap="innerHTML">
+        <select name="word_type">
+            <option value="auto">auto</option>
+            <option value="noun">noun</option>
+            <option value="verb">verb</option>
+            <option value="pronoun">amuini</option>
+        </select>
+        <input type="text" name="word" placeholder="latinized tavsa word">
+        <input type="text" name="definition" placeholder="definition">
+        <input value="Add" type="submit">
+    </form>
+
+    <div hx-get="/tavsa/dict" hx-trigger="load"></div>
+
+    <div id="dict"></div>
+
+</body>
+
+</html>

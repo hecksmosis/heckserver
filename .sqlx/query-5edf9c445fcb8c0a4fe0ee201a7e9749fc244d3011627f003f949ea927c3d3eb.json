@@ -1,0 +1,20 @@
+{
+  "db_name": "SQLite",
+  "query": "select id from tavsa order by id desc limit 1",
+  "describe": {
+    "columns": [
+      {
+        "name": "id",
+        "ordinal": 0,
+        "type_info": "Int64"
+      }
+    ],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": [
+      false
+    ]
+  },
+  "hash": "5edf9c445fcb8c0a4fe0ee201a7e9749fc244d3011627f003f949ea927c3d3eb"
+}

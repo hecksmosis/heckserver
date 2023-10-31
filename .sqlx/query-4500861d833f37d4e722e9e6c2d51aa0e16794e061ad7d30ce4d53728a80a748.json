@@ -1,0 +1,12 @@
+{
+  "db_name": "SQLite",
+  "query": "INSERT INTO tavsa (type, word, definition) VALUES (?, ?, ?)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Right": 3
+    },
+    "nullable": []
+  },
+  "hash": "4500861d833f37d4e722e9e6c2d51aa0e16794e061ad7d30ce4d53728a80a748"
+}

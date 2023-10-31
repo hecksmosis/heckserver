@@ -1,0 +1,38 @@
+{
+  "db_name": "SQLite",
+  "query": "SELECT * FROM tavsa",
+  "describe": {
+    "columns": [
+      {
+        "name": "id",
+        "ordinal": 0,
+        "type_info": "Int64"
+      },
+      {
+        "name": "type",
+        "ordinal": 1,
+        "type_info": "Text"
+      },
+      {
+        "name": "word",
+        "ordinal": 2,
+        "type_info": "Text"
+      },
+      {
+        "name": "definition",
+        "ordinal": 3,
+        "type_info": "Text"
+      }
+    ],
+    "parameters": {
+      "Right": 0
+    },
+    "nullable": [
+      false,
+      false,
+      false,
+      false
+    ]
+  },
+  "hash": "fc046c5323405418ab5da10fcfeb89ecad84338e08f6b97f0bfac541efb26f6c"
+}
