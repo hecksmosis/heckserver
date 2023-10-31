@@ -183,17 +183,6 @@ struct TavsaEtymology {
 
 fn get_word_etymology(word: &str, word_type: &str) -> Option<TavsaEtymology> {
     match word_type {
-        "noun" => {None}
-        "verb" => {
-            if let Some(index) = word.find("rn") {
-                let letters = &word[..index];
-                let subject_index = word.find("t");
-                let subject_pl_index = word.find("d");
-                let ci_index = word.find("k");
-                let ci_pl_index = word.find("g");
-
-fn get_word_etymology(word: &str, word_type: &str) -> Option<TavsaEtymology> {
-    match word_type {
         "verb" => {
             if let Some(index) = word.find("rn") {
                 let letters = &word[..index];
@@ -213,21 +202,6 @@ fn get_word_etymology(word: &str, word_type: &str) -> Option<TavsaEtymology> {
         "noun" => todo!(),
         "amuini" => todo!(),
         _ => todo!(),
-    }
-}
-
-                Some(TavsaEtymology {
-                    lexema: letters.to_string(),
-                    sujeto: None,
-                    ci: None,
-                    modifiers: vec![],
-                })
-            } else {
-                None
-            }
-        }
-        "amuini" => {None}
-        _ => {None}
     }
 }
 
